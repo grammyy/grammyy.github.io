@@ -1,0 +1,12 @@
+.card {background: var(--gallery-background); border-top: 2px solid var(--gallery-accent); border-radius: 4px; position: relative; padding: var(--layout-gallery-item-padding); height: fit-content;
+    h1 {letter-spacing: -2px; font-size: xxx-large; margin: 0 55px 8px 0; text-overflow: ellipsis; line-height: 34px}
+    button {position: absolute; top: var(--layout-gallery-item-padding); right: var(--layout-gallery-item-padding); background: var(--button); height: 35px; width: 55px; border-radius: 5px}
+    img {width: 100%}
+
+    > div {background: #282629; border-top: 2px solid var(--button-accent); border-radius: 2px;
+        > h2 {padding: 5px 9px; border-bottom: 2px solid var(--primary); letter-spacing: -1px}
+        div {background: #7c7c7c;
+            h2 {text-align: center; margin: 5px; letter-spacing: -1px; color: #171717}
+        }
+    }
+}

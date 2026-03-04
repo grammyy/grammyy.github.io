@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+        <title>Gramweb</title>
+        <link rel="icon" href="gramweb/favicon.ico" type="image/x-icon" />
+
+        <link rel="stylesheet" type="text/css" href="gramweb/html/theme.css" />
+        <link rel="stylesheet" type="text/css" href="gramweb/html/stylist.css" />
+
+        <script async src="gramweb/preload.js"></script>
+    </head>
+
+    <body>
+        <div id="loading" class="static">
+            <img src="gramweb/favicon.ico">
+            <h2>GramWeb</h2>
+        </div>
+
+        <div id="footer">
+            <p style="left: 0">GRAMWEB</p>
+            <p style="right: 0">GRAMWEB</p>
+        </div>
+
+        <div id="main">
+            <div id="content">
+                <header>GRAMWEB // Vnull</header>
+                <h2>JANE DOE</h2>
+
+                <section>
+                    <!--preload here-->
+                    <prediv style="height: 45%; width: 100%"></prediv>
+                    <prediv style="height: 15%; width: 100%"></prediv>
+                    <prediv style="height: 40%; width: calc(30% - var(--layout-gap))"></prediv>
+                    <prediv style="height: 40%; width: 70%"></prediv>
+                </section>
+                <aside></aside>
+            </div>
+
+            <div id="rightbar">
+                <div id="updates">
+                    <h>UPDATES</h>
+                </div>
+
+                <!--other-->
+
+                <img src="resources/barcode.png">
+            </div>
+        </div>
+
+        <!--main here-->
+
+        <canvas id="context" class="static"></canvas>
+
+        <script src="https://cdn.jsdelivr.net/npm/animejs/lib/anime.iife.min.js"></script>
+
+        <script defer src="gramweb/html/render.js"></script>
+        <script defer src="scripts/networking.js"></script>
+        <script defer src="scripts/math.js"></script>
+        <script defer src="scripts/cookies.js"></script>
+        <script defer src="scripts/toast.js"></script>
+    </body>
+</html>

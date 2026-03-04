@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+        <title>Gramweb</title>
+        <link rel="icon" href="gramweb/favicon.ico" type="image/x-icon" />
+
+        <link rel="stylesheet" type="text/css" href="gramweb/html/theme.css" />
+        <link rel="stylesheet" type="text/css" href="gramweb/html/stylist.css" />
+
+        <script async src="gramweb/preload.js"></script>
+    </head>
+
+    <body>
+        <div id="loading" class="static">
+            <img src="gramweb/favicon.ico">
+            <h2>GramWeb</h2>
+        </div>
+
+        <div id="side">
+            <div class="taskbar">
+                <button id="home" onclick="interface.flash(this)"></button>
+                <div id="media" ></div>
+            </div>
+
+            <div class="content">
+                <div id="leftbar">
+                    <!--placeholders go here later-->
+                </div>
+            </div>
+        </div>
+
+        <div id="main">
+            <div class="taskbar">
+                <div id="search">
+                    <!--
+                        <input>
+                    -->
+                </div>
+                <div id="volume">
+                    <!--
+                        <p>MASTER</p>
+                        <canvas class="dial"></canvas>
+                        <p>0 dB</p>
+                    -->
+                </div>
+                <div id="island">
+                    <button id="contact" onclick="interface.flash(this)"></button>
+                    <button id="help" onclick="interface.flash(this)"></button>
+                </div>
+                <button id="menu" onclick="interface.flash(this)"></button>
+            </div>
+
+            <div class="content">
+                <div id="analog">
+                    <button id="back" onclick="interface.flash(this)">
+                        <svg viewBox="0 0 100 100" preserveAspectRatio="none" width="25" height="7">
+                            <path stroke="currentColor" fill="currentColor" d="M 50,5 95,97.5 5,97.5 Z"/>
+                        </svg>
+                    </button>
+                    <!--placeholders go here later-->
+                    <button id="next" onclick="interface.flash(this)">
+                        <svg viewBox="0 0 100 100" preserveAspectRatio="none" width="25" height="7">
+                            <path stroke="currentColor" fill="currentColor" d="M50 95 95 2.5 5 2.5Z"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div id="categories"></div>
+
+                <div id="gallery">
+                    <div id="repos">
+                        <!--placeholders go here later-->
+                    </div>
+
+                    <img src="resources/barcode.png"> 
+                </div>     
+
+                <svg viewBox="0 0 0.65 0.4" preserveAspectRatio="none" width="100vw" height="100vh">
+                    <path stroke="black" fill="black" d="M1 0 1 1 .4 1 1 0"/>
+                </svg>
+            </div>
+        </div>
+
+        <!--main here-->
+
+        <canvas id="context" class="static"></canvas>
+        
+        <script src="https://cdn.jsdelivr.net/npm/animejs/lib/anime.iife.min.js"></script>
+        
+        <script defer src="gramweb/html/render.js"></script>
+        <script defer src="scripts/networking.js"></script>
+        <script defer src="scripts/math.js"></script>
+        <script defer src="scripts/cookies.js"></script>
+        <script defer src="scripts/toast.js"></script>
+    </body>
+</html>

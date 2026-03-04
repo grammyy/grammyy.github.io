@@ -1,0 +1,11 @@
+:root {
+    #left, #right {
+        --text: #949494 !important;
+    }
+
+    --text: white;
+    --main: #343434;
+    --accent: #161616;
+    --background: black;
+    --accent-background: #181818;
+}

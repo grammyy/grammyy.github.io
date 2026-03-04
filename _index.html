@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+        <title>Gramweb</title>
+        <link rel="icon" href="gramweb/favicon.ico" type="image/x-icon" />
+
+        <link rel="stylesheet" type="text/css" href="gramweb/html/themes.css" />
+        <link rel="stylesheet" type="text/css" href="gramweb/html/stylist.css" />
+
+        <script async src="gramweb/preload.js"></script>
+    </head>
+
+    <body>
+        <div id="loading">
+            <img src="gramweb/favicon.ico">
+            <h2>GramWeb</h2>
+        </div>
+
+        <div id="left">
+            <h1>GramWeb<span> - V?</span></h1>
+            <div id="taskbar">
+                <p>Media</p>
+                <p>Theme</p>
+                <p>Cookies</p>
+                <p>Socials</p>
+                <p>Contact</p>
+            </div>
+
+            <table>
+                <tr>
+                    <th>Repo</th>
+                    <th>Last Updated</th>
+                    <th>Commits</th>
+                    <th>Active</th>
+                    <th>Size</th>
+                </tr>
+
+                <tr>
+                    <td>generic</td>
+                    <td>today</td>
+                    <td>21</td>
+                    <td style="color: #2a7734">Active</td>
+                    <td>412</td>
+                </tr>
+
+                <tr>
+                    <td>generic</td>
+                    <td>today</td>
+                    <td>21</td>
+                    <td style="color: #772a44">Inactive</td>
+                    <td>412</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="right">
+            <h1>Generic Repo</h1>
+            <div id="repoNews">main - Commits: N/A</div>
+
+            <div class="button hub" id="repoStats">
+                <p>N/A</p>
+                <p>N/A</p>
+                <p>N/A</p>
+                <p>N/A</p>
+                <p>N/A</p>
+                <p>N/A</p>
+            </div>
+
+            <div class="collapsible" id="gallery">
+                <p></p>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <div id="toolbar">
+                <svg></svg>
+                <svg></svg>
+                <svg></svg>
+                <svg></svg>
+                <svg></svg>
+                <svg></svg>
+                <p>Gramweb<span>Interface</span></p>
+            </div>
+        </div>
+
+        <canvas id="context"></canvas>
+        
+        <script defer src="gramweb/html/render.js"></script>
+        <script defer src="scripts/networking.js"></script>
+        <script defer src="scripts/math.js"></script>
+        <script defer src="scripts/cookies.js"></script>
+        <script defer src="scripts/toast.js"></script>
+    </body>
+</html>

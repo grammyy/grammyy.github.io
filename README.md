@@ -1,1 +1,1 @@
-
+- [ ] Finish all size varients for gallery items 

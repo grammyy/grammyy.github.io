@@ -1,6 +1,85 @@
-color changer and theme presents
-reduced motion
-    auto focus repos
-    auto open repos
-    news open repo
-allow cookies
+(ignoring all lazy loading optimizes until design is finalized)
+
+languages
+commission/private
+
+what exactly does this website need to be?
+    commissions / store
+    projects details / gallery / status (such what im working on etc)
+    updates
+    contact form & landing page to other websites
+
+    ↓ possible things ↓
+
+    experiments
+    site/page builder
+    upload hub
+    console / server manager & log
+
+mostly newspaper site with other things such as a brief overview of myself and future projects
+    need gallery, part for updates. seperate part for automantic updates and manual
+    need section for portfoloul
+    need part for future iterations/plans, and projects
+    filters/searchbar optional
+    index search optional
+    need contact forms
+    qr code/and bar code - symbols for copyright and etc
+
+    perhaps a builder for the site
+
+arrow transition
+
+themes
+    windows xp or aero frugo
+art
+coding projects
+gallery
+collection lists
+page creator maybe
+factory page, constant progress
+page proxier, such as reading novels in-page
+schimatics
+scada control panel
+experments
+id badge that may serve as a quick-showcase etc (pull up for mobile)
+store / funding page for future projects
+note taker, likely make this its own framework
+suggestions
+desktop uploading site
+
+future things
+    chat to discord channel in-page, specific channel in discord
+    novels
+    gravity affected dom elements
+    weird ass gambling site
+    manga/novel/etc site with native ranker
+    forum creator
+    weather
+    chest, able to drop supported items and files into it with physics
+
+main
+    taskbar 
+        audio player
+        search bar
+        volume
+        help
+        contact
+    main gallery area
+    shop
+    filter
+    sign bar
+    new quicks bar maybe?
+
+specific needs to consider
+    announcement area for things like "grand opening" and etc
+    area or way to switch webpage entirely
+    future projects list with priority / maybe seperate lists for important upcoming things, such as recodes?
+
+linear-gradient(180deg,rgba(12, 14, 16, 1) 0%, rgba(18, 20, 20, 1) 100%)
+linear-gradient(135deg,rgba(52, 51, 52, 1) 0%, rgba(24, 24, 24, 1) 100%);
+
+settings
+themes settings
+processes tray
+logs
+ascii menu renderer

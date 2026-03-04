@@ -1,0 +1,32 @@
+:root {
+    --layout-taskbar-height: 6vh;
+        --layout-taskbar-media-width: calc(25% - 6vh);
+        --layout-taskbar-search-width: 50%;
+        --layout-taskbar-volume-width: 10%;
+        --layout-taskbar-island-width: 8%;
+    --layout-left-width: 24%;
+    --layout-analog-width: 6%;
+    --layout-categories-width: 2.5%;
+    --layout-gallery-width: calc(100% - (var(--layout-analog-width) + var(--layout-categories-width)));
+    --layout-margin: 5px;
+
+    --taskbar-background: black;
+
+    --taskbar-primary: linear-gradient(180deg,rgba(12, 14, 16, 1) 0%, rgba(18, 20, 20, 1) 100%);
+    --taskbar-button-primary: linear-gradient(180deg,rgb(33, 33, 33) 0%, rgb(22, 20, 22) 100%);
+    --taskbar-button-accent: #363636;
+    --main-primary: linear-gradient(120deg,var(--main-accent) 0%, rgba(0, 0, 0, 1) 100%);    
+    --main-accent: rgba(35, 35, 35, 1);
+    
+    --mesh-image: var(--main-accent) radial-gradient(rgb(0, 0, 0) 13.6%, transparent 13.6%) repeat 4px 4px / 8px 8px;
+
+    --accent-radius: 12px;
+    --accent-thickness: 3px;
+    
+    --button: #313131;
+    --button-accent: #3b3b3b;
+
+    --primary: white;
+    --background: black;
+    --text: white;
+}

@@ -1,0 +1,104 @@
+@keyframes flash {
+    0%   {background: white; color: black}
+    100%  {background: black; color: white}
+}
+
+@keyframes hoverActive {
+    0%   {background: #9dbf00}
+    50%  {background: #fadc00}
+    100%   {background: #9dbf00}
+}
+
+@keyframes hoverLeave {
+    0%   {background: #9dbf00; color: white}
+    50%  {background: #fadc00; color: black}
+    100%   {background: #9dbf00; color: white}
+}
+
+/* ↑ keyframes ↑ */
+
+@media (orientation: portrait) {
+    :root{
+        --layout-taskbar-height: 0%;
+        --layout-categories-width: 14%;
+        --layout-gallery-width: calc(100% - var(--layout-categories-width) - var(--layout-margin));
+    }
+
+    #side{display: none}
+    
+    #main {width: 100% !important;
+        #analog {display: none}
+        
+        .taskbar {display: none}
+        .content {height: 100vh}
+    }
+}
+
+/* ↑ dyanmic media ↑ */
+
+* {scrollbar-width: none; margin: 0; font-family: "Arial"; overflow: hidden; color: var(--text)}
+html, body {height: 100vh; width: 100vw; background: var(--background); display: flex; gap: var(--layout-margin)}
+svg {pointer-events: none}
+input {all: unset; background: var(--taskbar-button-primary); border-top: 1px solid var(--taskbar-button-accent)}
+/* ↑ elements ↑ */
+
+#side {width: var(--layout-left-width)}
+#main {width: calc(100% - var(--layout-left-width))}
+#loading {background: black; opacity: 100%; transition-property: opacity; transition-duration: 0.5s; display: flex; justify-content: center; align-items: center; flex-direction: column; z-index: 1000;
+    img {width: 150px; filter: grayscale(1)}
+    h2 {margin: 30px; text-align: center; height: 50px; width: 200px; line-height: 45px; letter-spacing: 6px}
+}
+
+#media {flex: 1 1 var(--layout-taskbar-media-width)}
+#search {flex: 1 1 var(--layout-taskbar-search-width); padding: 8px;
+    input {width: 100%; padding: 8px 0px}
+}
+#volume {flex: 1 1 var(--layout-taskbar-volume-width)}
+#island {flex: 1 1 var(--layout-taskbar-island-width)}
+
+#leftbar {width: 100%; background: var(--main-accent)}
+#analog {width: var(--layout-analog-width); display: flex; flex-direction: column; justify-content: space-between; background: var(--mesh-image);
+    > button:active, > *.flashAnim:active {animation: hoverActive 2s linear infinite}
+    button {color: black;
+        * {color: inherit}
+    }
+
+    #back {border-bottom: 1px solid var(--button-accent); border-bottom-left-radius: var(--accent-radius); border-bottom-right-radius: var(--accent-radius);
+        svg {filter: drop-shadow( 0px -1px 0px var(--button-accent))}
+    }
+    #next {border-top: 1px solid var(--button-accent); border-top-left-radius: var(--accent-radius); border-top-right-radius: var(--accent-radius);
+        svg {filter: drop-shadow( 0px 1px 0px var(--button-accent))}
+    }
+}
+#categories {width: var(--layout-categories-width); background: var(--mesh-image)}
+#gallery {width: var(--layout-gallery-width);
+    img {filter: invert(100%); position: absolute; right: 0; bottom: 0; z-index: 1000; width: 300px}
+}
+
+/* ↑ objects ↑ */
+
+.static {height: 100vh; width: 100vw; position: absolute; pointer-events: none}
+
+.taskbar {height: calc(var(--layout-taskbar-height)); width: 100%; display: flex; gap: var(--layout-margin); margin-bottom: var(--layout-margin); background: var(--taskbar-background);
+    button {aspect-ratio: 1; border: 0}
+    > * {background: var(--taskbar-primary); display: flex; justify-content: space-evenly; align-items: center; font-family: system-ui;
+        canvas {aspect-ratio: 1; height: 100%}
+        > * {flex-shrink: 0}
+        p {height: fit-content}
+
+        &.flashAnim:active {animation: hoverActive 2s linear infinite}
+    }
+}
+.content {height: calc(100vh - var(--layout-taskbar-height) - var(--layout-margin)); width: 100%; display: flex; gap: var(--layout-margin);
+    > *:not(svg) {background: var(--main-primary)}
+    button {height: 20px; border-radius: 0; border: unset; background: var(--button)}
+    > svg {position: absolute}
+}
+
+.toast {height: 20px; width: 10px; position: fixed; z-index: 1000; top: 20px; left: 50%; border-radius: 20px; transform: translateX(-50%); transition-property: width, opacity; text-align: center; transition-duration: 0.5s; border: #181818 0.5px solid; background: black; white-space: nowrap; opacity: 0%; display: flex; justify-content: space-between; align-items: center;
+    &::before, &::after{content: ""; width: 30px; height: 100%; display: block; flex-shrink: 0;}
+    &.expanded{width: 300px}
+    &.flash{animation: flash .11s linear infinite}
+}
+
+/* ↑ classes ↑ */

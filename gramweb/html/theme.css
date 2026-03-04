@@ -1,0 +1,61 @@
+/* updates and calender padding are incorrect, fix later  */
+
+:root {
+    --layout-taskbar-height: 6vh;
+        --layout-taskbar-media-width: calc(25% - 6vh);
+        --layout-taskbar-search-width: 50%;
+        --layout-taskbar-volume-width: 6%;
+        --layout-taskbar-island-width: 12%;
+        --layout-taskbar-button-padding: 1vh;
+    --layout-left-width: 24%;
+        --layout-left-updates-width: 170px;
+        --layout-left-updates-padding: 20px;
+        --layout-left-queue-padding: 50px 0 5% 0;
+        --layout-left-header-height: 14%;
+        --layout-left-header-padding: 12px;
+    --layout-analog-width: 6%;
+    --layout-categories-height: 4%;
+    --layout-gallery-width: calc(100% - var(--layout-analog-width));
+        --layout-gallery-gap: 1em;
+        --layout-gallery-item-padding: 10px;
+    --layout-margin: 5px;
+
+    --taskbar-background: black;
+
+    --taskbar-primary: linear-gradient(180deg, #242424 0%, var(--secondary-accent) 100%);
+    --taskbar-button-primary: linear-gradient(180deg,rgb(33, 33, 33) 0%, rgb(22, 20, 22) 100%);
+    --taskbar-button-accent: #363636;
+    --main-primary: linear-gradient(120deg,var(--main-accent) 0%, rgba(0, 0, 0, 1) 100%);    
+    --main-accent: #161616;
+
+    --queue-height: 95px;
+    --queue-padding: 5px;
+    --queue-date-padding: 3px;
+    --queue-linebreak: repeating-linear-gradient(to right, var(--button) 0px, var(--button) 8px, transparent 8px, transparent 15px);
+    --queue-linebreak-width: 2px;
+    --queue-bubble-radius: 15px;
+    --queue-bubble-padding: 4px 0;
+
+    --about-accent: #a1a1a1;
+    --about-contact-width: 67px;
+    
+    --secondary-accent: #202020;
+
+    --mesh-image: var(--main-accent) radial-gradient(rgb(0, 0, 0) 13.6%, transparent 13.6%) repeat 4px 4px / 8px 8px;
+    --checkerboard: repeating-conic-gradient(var(--background) 0 25%, #0000 0 50%) 20% / 12px 12px;
+
+    --accent-radius: 12px;
+    --accent-thickness: 3px;
+    
+    --button: #313131;
+    --button-accent: #3b3b3b;
+
+    --primary: #b01a29;
+    --background: black;
+    --text: white;
+
+    --gallery-background: #1d1d1d;
+    --gallery-accent: #2b2b2b;
+
+    --shadow: 15px rgba(0, 0, 0, 0.5);
+}
