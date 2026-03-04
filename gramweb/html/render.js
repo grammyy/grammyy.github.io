@@ -36,19 +36,21 @@ var interface = {
                 // ↑ call wrapped console class ↑ 
 
                 // ↓ format message for dom ↓
-                let cleanedArgs = []
-                let skip = 0
+                var cleanedArgs = []
+                var skip = 0
 
                 for (let i = 0; i < args.length; i++) {
                     if (skip > 0) {
                         skip--
+
                         continue
                     }
 
                     const arg = args[i]
 
                     if (typeof arg === "string" && arg.includes("%c")) {
-                        const count = (arg.match(/%c/g) || []).length
+                        var count = (arg.match(/%c/g) || []).length
+                        
                         skip = count // skip css args used by %c
                         cleanedArgs.push(arg.replace(/%c/g, ""))
                     } else {
@@ -214,6 +216,8 @@ window.onload = function() {
             loading.style.opacity = "0%"
             
             interface.ready = true
+
+            new toast("This site is under beta access, expect things to not work and look ugly for now.", 10000)
         }, 2000)
 
         render.tick()
